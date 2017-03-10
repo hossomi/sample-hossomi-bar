@@ -5,6 +5,10 @@ import java.util.List;
 
 import br.com.hossomi.bar.menu.option.Option;
 
+/**
+ * Nesse caso o menu não possui lógica nenhuma, servindo apenas para agrupar opções. No entanto,
+ * observe que os dados que ele possui são mais voltados ao fluxo da aplicação do que dados.
+ */
 public class Menu {
 
     private String label;

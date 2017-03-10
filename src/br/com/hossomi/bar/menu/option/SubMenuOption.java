@@ -3,6 +3,10 @@ package br.com.hossomi.bar.menu.option;
 import br.com.hossomi.bar.menu.Menu;
 import br.com.hossomi.bar.service.MenuService;
 
+/**
+ * Implementa a interface {@link Option}, fazendo com que entre em um submenu através do
+ * {@link MenuService} quando selecionada.
+ */
 public class SubMenuOption implements Option {
 
     private Menu subMenu;

@@ -1,5 +1,8 @@
 package br.com.hossomi.bar.model;
 
+/**
+ * Possui os dados dos produtos existentes.
+ */
 public enum Product {
     HAMBURGER("Hamburger", 5.00),
     PASTA("Pasta", 7.50),

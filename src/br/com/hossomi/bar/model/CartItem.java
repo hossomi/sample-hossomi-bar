@@ -1,5 +1,8 @@
 package br.com.hossomi.bar.model;
 
+/**
+ * Representa um item no carrinho do usuário.
+ */
 public class CartItem {
     private Product product;
     private int quantity;

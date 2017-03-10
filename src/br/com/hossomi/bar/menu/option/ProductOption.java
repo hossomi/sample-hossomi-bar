@@ -1,11 +1,17 @@
 package br.com.hossomi.bar.menu.option;
 
+import static br.com.hossomi.bar.util.Utils.formatCost;
+
 import br.com.hossomi.bar.menu.input.IntegerUserInput;
 import br.com.hossomi.bar.model.Product;
 import br.com.hossomi.bar.service.CartService;
 
-import static br.com.hossomi.bar.util.Utils.formatCost;
-
+/**
+ * Implementa a interface {@link Option}, fazendo com que seja adicionado um item ao carrinho
+ * através do {@link CartService} quando selecionada.
+ *
+ * Utiliza também o {@link IntegerUserInput} para obter do usuário a quantidade de itens.
+ */
 public class ProductOption implements Option {
 
     private Product product;

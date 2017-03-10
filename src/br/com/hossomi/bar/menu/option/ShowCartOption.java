@@ -2,12 +2,16 @@ package br.com.hossomi.bar.menu.option;
 
 import java.util.List;
 
+import static br.com.hossomi.bar.util.Utils.formatCost;
+
 import br.com.hossomi.bar.model.Cart;
 import br.com.hossomi.bar.model.CartItem;
 import br.com.hossomi.bar.service.CartService;
 
-import static br.com.hossomi.bar.util.Utils.formatCost;
-
+/**
+ * Implementa a interface {@link Option}, fazendo com que o conteúdo do carriho seja mostrado na
+ * tela quando selecionada. Utiliza o {@link CartService} para acessar o conteúdo do carrinho.
+ */
 public class ShowCartOption implements Option {
 
     private final CartService cartService;
