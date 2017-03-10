@@ -1,2 +1,2 @@
 # Hossomi Bar
-A sample console project using interfaces, service and controller layers.
+Um exemplo de projeto baseado em console utilizando interfaces e uma arquitetura básica em serviços e controladores.
