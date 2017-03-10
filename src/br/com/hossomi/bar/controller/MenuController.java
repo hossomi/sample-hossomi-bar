@@ -4,8 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import br.com.hossomi.bar.menu.Menu;
-import br.com.hossomi.bar.menu.option.MenuOption;
-import br.com.hossomi.bar.service.CartService;
+import br.com.hossomi.bar.menu.option.Option;
 import br.com.hossomi.bar.service.MenuService;
 
 public class MenuController {
@@ -48,10 +47,10 @@ public class MenuController {
     }
 
     private void showOptions(Menu menu) {
-        List<MenuOption> options = menu.getOptions();
+        List<Option> options = menu.getOptions();
         for (int i = 0; i < options.size(); i++) {
-            MenuOption menuOption = options.get(i);
-            System.out.println((i + 1) + ". " + menuOption.getLabel());
+            Option option = options.get(i);
+            System.out.println((i + 1) + ". " + option.getLabel());
         }
     }
 

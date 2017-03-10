@@ -8,11 +8,11 @@ import br.com.hossomi.bar.service.CartService;
 
 import static br.com.hossomi.bar.util.Utils.formatCost;
 
-public class ShowCartMenuOption implements MenuOption {
+public class ShowCartOption implements Option {
 
     private final CartService cartService;
 
-    public ShowCartMenuOption(CartService cartService) {
+    public ShowCartOption(CartService cartService) {
         this.cartService = cartService;
     }
 

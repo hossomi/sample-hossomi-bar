@@ -2,9 +2,9 @@ package br.com.hossomi.bar;
 
 import br.com.hossomi.bar.controller.MenuController;
 import br.com.hossomi.bar.menu.Menu;
-import br.com.hossomi.bar.menu.option.BackMenuOption;
-import br.com.hossomi.bar.menu.option.ProductMenuOption;
-import br.com.hossomi.bar.menu.option.ShowCartMenuOption;
+import br.com.hossomi.bar.menu.option.BackOption;
+import br.com.hossomi.bar.menu.option.ProductOption;
+import br.com.hossomi.bar.menu.option.ShowCartOption;
 import br.com.hossomi.bar.menu.option.SubMenuOption;
 import br.com.hossomi.bar.model.Product;
 import br.com.hossomi.bar.service.CartService;
@@ -16,17 +16,17 @@ public class HossomiBar {
         CartService cartService = new CartService();
 
         Menu buyMenu = new Menu("Buy", "What would you like?");
-        buyMenu.addOption(new ProductMenuOption(Product.HAMBURGER, cartService));
-        buyMenu.addOption(new ProductMenuOption(Product.PASTA, cartService));
-        buyMenu.addOption(new ProductMenuOption(Product.FULL_MEAL, cartService));
-        buyMenu.addOption(new ProductMenuOption(Product.JUICE, cartService));
-        buyMenu.addOption(new ProductMenuOption(Product.BEER, cartService));
-        buyMenu.addOption(new BackMenuOption(menuService));
+        buyMenu.addOption(new ProductOption(Product.HAMBURGER, cartService));
+        buyMenu.addOption(new ProductOption(Product.PASTA, cartService));
+        buyMenu.addOption(new ProductOption(Product.FULL_MEAL, cartService));
+        buyMenu.addOption(new ProductOption(Product.JUICE, cartService));
+        buyMenu.addOption(new ProductOption(Product.BEER, cartService));
+        buyMenu.addOption(new BackOption(menuService));
 
         Menu mainMenu = new Menu("Main", "Welcome to Hossomi Bar! How can I help you?");
         mainMenu.addOption(new SubMenuOption(buyMenu, menuService));
-        mainMenu.addOption(new ShowCartMenuOption(cartService));
-        mainMenu.addOption(new BackMenuOption(menuService));
+        mainMenu.addOption(new ShowCartOption(cartService));
+        mainMenu.addOption(new BackOption(menuService));
 
         menuService.enter(mainMenu);
 

@@ -1,6 +1,6 @@
 package br.com.hossomi.bar.menu.option;
 
-public interface MenuOption {
+public interface Option {
 
     String getLabel();
 

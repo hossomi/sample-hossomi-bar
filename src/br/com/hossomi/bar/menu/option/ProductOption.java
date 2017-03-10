@@ -6,13 +6,13 @@ import br.com.hossomi.bar.service.CartService;
 
 import static br.com.hossomi.bar.util.Utils.formatCost;
 
-public class ProductMenuOption implements MenuOption {
+public class ProductOption implements Option {
 
     private Product product;
 
     private final CartService cartService;
 
-    public ProductMenuOption(Product product, CartService cartService) {
+    public ProductOption(Product product, CartService cartService) {
         this.cartService = cartService;
         this.product = product;
     }

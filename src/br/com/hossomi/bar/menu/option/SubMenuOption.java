@@ -3,7 +3,7 @@ package br.com.hossomi.bar.menu.option;
 import br.com.hossomi.bar.menu.Menu;
 import br.com.hossomi.bar.service.MenuService;
 
-public class SubMenuOption implements MenuOption {
+public class SubMenuOption implements Option {
 
     private Menu subMenu;
 

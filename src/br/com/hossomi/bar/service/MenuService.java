@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import br.com.hossomi.bar.menu.Menu;
-import br.com.hossomi.bar.menu.option.MenuOption;
+import br.com.hossomi.bar.menu.option.Option;
 
 public class MenuService {
 
@@ -28,7 +28,7 @@ public class MenuService {
 
     public void selectOption(int option) {
         Menu menu = getCurrentMenu();
-        List<MenuOption> options = menu.getOptions();
+        List<Option> options = menu.getOptions();
         options.get(option).select();
     }
 }

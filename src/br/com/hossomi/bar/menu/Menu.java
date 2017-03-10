@@ -3,14 +3,14 @@ package br.com.hossomi.bar.menu;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.hossomi.bar.menu.option.MenuOption;
+import br.com.hossomi.bar.menu.option.Option;
 
 public class Menu {
 
     private String label;
     private String prompt;
 
-    private List<MenuOption> options = new ArrayList<>();
+    private List<Option> options = new ArrayList<>();
 
     public Menu(String label, String prompt) {
         this.label = label;
@@ -25,11 +25,11 @@ public class Menu {
         return prompt;
     }
 
-    public List<MenuOption> getOptions() {
+    public List<Option> getOptions() {
         return options;
     }
 
-    public void addOption(MenuOption option) {
+    public void addOption(Option option) {
         options.add(option);
     }
 }
